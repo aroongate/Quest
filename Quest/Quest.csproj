@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3820DAC6-3577-402B-963B-46857D9965B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quest</RootNamespace>
+    <AssemblyName>Quest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="archer\formArcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="archer\formArcher.Designer.cs">
+      <DependentUpon>formArcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="archer\formArcherText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="archer\formArcherText.Designer.cs">
+      <DependentUpon>formArcherText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="archer\formContinueArcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="archer\formContinueArcher.Designer.cs">
+      <DependentUpon>formContinueArcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class\archer.cs" />
+    <Compile Include="class\hero.cs" />
+    <Compile Include="class\swordman.cs" />
+    <Compile Include="class\wizard.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="swordman\formSwordMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="swordman\formSwordMan.Designer.cs">
+      <DependentUpon>formSwordMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="swordman\formText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="swordman\formText.Designer.cs">
+      <DependentUpon>formText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizard\formContinueWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizard\formContinueWizard.Designer.cs">
+      <DependentUpon>formContinueWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizard\formTextWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizard\formTextWizard.Designer.cs">
+      <DependentUpon>formTextWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizard\formWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizard\formWizard.Designer.cs">
+      <DependentUpon>formWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="archer\formArcher.resx">
+      <DependentUpon>formArcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="archer\formArcherText.resx">
+      <DependentUpon>formArcherText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="archer\formContinueArcher.resx">
+      <DependentUpon>formContinueArcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="swordman\formSwordMan.resx">
+      <DependentUpon>formSwordMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="swordman\formText.resx">
+      <DependentUpon>formText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizard\formContinueWizard.resx">
+      <DependentUpon>formContinueWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizard\formTextWizard.resx">
+      <DependentUpon>formTextWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizard\formWizard.resx">
+      <DependentUpon>formWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\archer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\background.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\backgroundArcher.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\backgroundwizard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\swordman.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wizard.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
